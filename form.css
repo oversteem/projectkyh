@@ -1,0 +1,22 @@
+.style {
+    background-color: #000;
+    color: #fff;
+    padding: 3px 6px;
+}
+.styleFieldset{
+    width: 20%;
+   background-color: rgba(100, 100, 104, 0.973); 
+}
+
+.output {
+    font: 1rem 'Fira Sans', sans-serif;
+}
+
+input {
+    margin: .4rem;
+}
+h4{
+    color: rgba(231, 131, 38, 0.925);
+    margin: 3px;
+}
+

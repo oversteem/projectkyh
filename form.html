@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Formulär</title>
+        <link rel="stylesheet" type="text/css" href="css.css">
+        <link rel="stylesheet" type="text/css" href="form.css">
+    </head>
+    <header>
+
+            <div  id="headbackground">
+          
+                <div id="demo"> <!-- Gubben som springer i headern.-->
+                    <p id="image" onmouseover="animateScript()" onmouseout="stopAnimate()">
+                  
+                    </p>
+                  </div>
+          
+              <div id="logo-nav">
+                <img  src="/bilder/KYH-logonewnew.png" alt="kyh-logo" height="40px" width="100px" />
+              </div>
+              
+        
+            </div>
+          
+          </header>
+    <body>
+            <div id="background">
+            
+       <form action="form.html" method="get">               
+          <fieldset class="styleFieldset"> 
+               <legend class="style">Kontaktinformation</legend>
+               <h4>Förnamn:</h4> <input type="text" id="förnamn" name="kontaktinformation">
+               <label for="förnamn"></label><br/>
+               <h4>Efternamn:</h4> <input type="text" id="efternamn" name="kontaktinformation">
+               <label for="efternamn"></label><br/>
+               <h4>Personnummer:</h4><input type="text" id="personnummer" name="kontaktinformation">
+               <label for="personnummer"></label><br/>
+               <h4>Adress:</h4><input type="text" id="adress" name="kontaktinformation">
+               <label for="adress"></label><br/>
+               <h4>Postnummer:</h4><input type="text" id="postnummer" name="kontaktinformation">
+               <label for="postnummer"></label><br/>
+               <h4>Land:</h4><input type="text" id="land" name="kontaktinformation">
+               <label for="land"></label><br/>
+               <h4>Telefonnummer:</h4><input type="text" id="telefonnummer" name="kontaktinformation">
+               <label for="telefonnummer"></label><br/>
+               <h4>Mail:</h4><input type="text" id="mail" name="kontaktinformation" required>
+               <label for="mail"></label><br/>
+           </fieldset>
+           <fieldset class="styleFieldset">
+               <legend class="style">Kön</legend>
+               <h4>Kvinna</h4> <input type="radio" name="kön">
+               <h4>Man</h4> <input type="radio"  name="kön">
+               <h4>Hen</h4> <input type="radio"  name="kön">
+           </fieldset>
+           <fieldset class="styleFieldset">
+                <legend class="style">Behörighet</legend>
+                  <select>
+                             <option value="grundskola">Grundläggande behöringhet</option>
+                             <option value="Gymnasiumet">Särskild behörighet</option>
+                         </select>
+            </fieldset>
+           <fieldset class="styleFieldset">
+               <legend class="style">Intressen</legend>
+                <h4>Resa</h4> <input type="checkbox" name="intressen" id="resa" value="resa" onclick="validate()"/>
+                <label for="resa"></label>
+                <h4>Mata fåglar</h4> <input type="checkbox" name="intressen" id="matafåglar" value="matafåglar" onclick="validate()"/>
+                <label for="matafåglar"></label>
+                <h4>Sport</h4> <input type="checkbox" name="intressen" id="sport" value="sport" onclick="validate()"/>
+                <label for="sport"></label>
+               <h4>Matlagning</h4> <input type="checkbox" name="intressen" id="matlagning" value="matlagning" onclick="validate()"/>
+                <label for="matlagning"></label>
+                <h4>Gameing</h4> <input type="checkbox" name="intressen" id="gameing" value="gameing" onclick="validate()"/>
+                <label for="gameing"></label>
+           </fieldset>
+           <fieldset class="styleFieldset">
+               <legend class="style">Utbildningar</legend>
+               <select>
+                    <option value="Front-end Developer">Front-end Developer</option>
+                    <option value="Teknisk testare">Teknisk testare</option>
+                    <option value="Affärsutvecklare digital handel">Affärsutvecklare digital handel</option>
+                    <option value="Teknisk fastighetsforvaltare">Teknisk fastighetsforvaltare</option>
+                    <option value="Lönekonsult">Lönekonsult</option>
+                    <option value="Byggproduktionsledare">Byggproduktionsledare</option>
+                </select>
+           </fieldset>
+           <fieldset class="styleFieldset">
+                <legend class="style">Övrig information:</legend>
+                <label for="meddelande">Är det något mer vi behöver veta? max 100 tecken!</label>
+               <textarea name="meddelande" id="meddelande" cols="45" rows="5"></textarea>
+           </fieldset>
+           <fieldset class="styleFieldset">
+                <legend class="style">Skicka din ansökan:</legend>
+               <input type="submit" value="skicka" onclick="send()">
+            </fieldset>
+       </form>
+    </div> 
+        <script src="form.js" async defer></script>
+    </body>
+</html>

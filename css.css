@@ -1,0 +1,209 @@
+html
+{
+  height:auto;
+  width: auto;
+  overflow: hidden;
+  z-index: -1;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+::-webkit-scrollbar {
+    width: 0px;  /* remove scrollbar space */
+    background: transparent;  /* optional: just make scrollbar invisible */
+}
+
+
+ol
+{
+  text-decoration: none;
+  display:contents;
+  margin:0;
+}
+
+
+header
+{
+  height:100%;
+  width:100%;
+  margin:0px;
+  padding: 0px;
+  position:relative;
+  z-index: 1;
+}
+
+body
+
+{
+  width:100%;
+  margin:0px;
+  padding: 0px;
+  position:relative;
+
+}
+
+
+button
+{
+  color: grey;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 12px;
+  margin: 1%, 2%;
+  cursor: pointer;
+}
+
+style
+
+{
+  height: 100%;
+  width: 100%;
+}
+
+#buttonhome
+
+{
+  padding-top:0.5%;
+  padding-left: 5%;
+}
+
+
+#headbackground
+{
+
+  width:auto;
+  height:100%;
+  background-color: #333366;
+  background-image: linear-gradient(to bottom right,#2C2C2C, #EDEDED);
+  position:static;
+  z-index:2;
+  padding: 30px;
+
+}
+
+
+
+#logo-nav
+{
+  float:right;
+  margin: 1%;
+}
+
+
+#Feed
+{
+  width: 50%;
+  height: 120%;
+  position: relative;
+  z-index:1;
+  float:left;
+  border:3px;
+  border-radius: 3px;
+  border-color: black;
+  overflow-y:hidden;
+}
+
+
+#utbild-lista
+{
+  height: 50%;
+  width: 50%;
+  background-color: #A9A9A9;
+  font-family: cursive;
+  font-size: 16px;
+  overflow:auto;
+  overflow-x: hidden;
+  margin-left:5%;
+  margin-top: 10%;
+  border-radius: 20px;
+  overflow-y:scroll;
+  font:bold;
+  align-items: flex-end;
+
+}
+
+
+
+#background
+{
+  width:100%;
+  /*height:auto;*/
+  position:fixed; 
+  /* background-image: linear-gradient(to bottom right, #EDEDED , #2C2C2C); */
+  background-image: url("/bilder/standardbild.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow:scroll; 
+  height:500px;
+
+}
+
+.utbild-struct
+{
+  width:90%;
+  border: 2px solid;
+  border-radius: 5px , 5px;
+  border-color: black;
+  box-shadow: 3px 3px 3px 1px black;
+  padding: 10px;
+  margin-top: 14px;
+  margin-left: 8px;
+  margin-bottom:10px;
+  font-size: 100%;
+  z-index: auto;
+
+}
+.test-klass:hover {
+
+  border-color: #a76707f5;
+}
+
+.test-button:hover {
+
+}
+.myButton
+{
+  -webkit-box-shadow: 2px 3px 4px 1px #af6d0a;
+  background:linear-gradient(to bottom, #db7e04 5%, #c3800e 100%);
+  background-color:#c67fd4;
+  -webkit-border-radius:14px;
+  border-radius:14px;
+  border:1px solid #820d82;
+  display:inline-block;
+  cursor:pointer;
+  color:rgba(186, 93, 25, 0.7);
+  font-family:Arial;
+  font-size:17px;
+  font-weight:bold;
+  padding:8px 28px;
+  text-decoration:none;
+  text-shadow:0px 0px 0px #394085;
+  opacity: 0.6;
+  transition: 1.7s;
+}
+.myButton:hover {
+  background:linear-gradient(to bottom,  #c3800e 5%, #d4bb13 100%);
+  background-color:#080708;
+  opacity: 1;
+}
+
+.myButton:active {
+  position:relative;
+  top:1px;
+}
+
+/*Gubben som springer i headern*/
+#image {
+  height: 79px;
+  width: 1250px;
+  
+  background: url('https://cdn-images-1.medium.com/max/520/0*v-9KSDYtRcYIoCHv.png') 0px 0px;
+}
+
